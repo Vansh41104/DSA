@@ -1,3 +1,4 @@
+#include<stdio.h>
 #define MAX_SIZE 100  
   
 int queue[MAX_SIZE];  
@@ -25,14 +26,30 @@ int dequeue() {
     front++;  
     return element;  
 }  
+
+int show()
+          {
+	      if(front==-1)
+	      {
+		  printf("\nUnderflow!!");
+	      }
+	      else
+	      {
+		  printf("\nElements present in the Queue: \n");
+		  printf("%d\n",queue[front]);
+	      }
+          }
   
 int main() {  
     enqueue(10);  
     enqueue(20);  
     enqueue(30);  
+    enqueue(40);  
+    enqueue(50);  
     printf("%d ", dequeue());  
     printf("%d ", dequeue());  
     printf("%d ", dequeue());  
     printf("%d ", dequeue());  
+    show(); 
     return 0;  
 }  
