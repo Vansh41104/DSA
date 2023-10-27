@@ -1,5 +1,5 @@
 #include<stdio.h>
-#define MAX_SIZE 10
+#define MAX_SIZE 5
   
 int queue[MAX_SIZE];  
 int front = -1;  
@@ -79,11 +79,6 @@ int main() {
     enqueue(12);
     enqueue(13);
     enqueue(14);
-    enqueue(15);
-    enqueue(16);
-    enqueue(17);
-    enqueue(18);
-    enqueue(19);
     
     Display(); 
     return 0;  
