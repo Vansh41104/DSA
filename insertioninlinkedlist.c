@@ -16,7 +16,6 @@ void create_node(){
 }
 void insertatfirst(){
     create_node();
-    count++;
     if(start==NULL){
         start=temp;
         rear=temp;
